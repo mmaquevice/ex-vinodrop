@@ -6,17 +6,13 @@ import static org.junit.Assert.assertNull;
 import static play.test.Helpers.fakeApplication;
 import static play.test.Helpers.inMemoryDatabase;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
 import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.yaml.snakeyaml.Yaml;
 
 import play.test.WithApplication;
+import util.YamlUtil;
 
 import com.avaje.ebean.Ebean;
 
@@ -81,7 +77,7 @@ public class ModelsTest extends WithApplication {
 
 	@Test
 	public void fullTest() {
-		Ebean.save(loadYaml("test-data.yml"));
+		Ebean.save(YamlUtil.loadYaml("test-data.yml"));
 
 		// Count things
 		assertEquals(3, User.find.findRowCount());
@@ -101,29 +97,6 @@ public class ModelsTest extends WithApplication {
 		// Find all Bob's todo tasks
 		List<Task> bobsTasks = Task.findTodoInvolving("bob@example.com");
 		assertEquals(4, bobsTasks.size());
-	}
-
-	private List loadYaml(String nameFile) {
-		final Yaml yaml = new Yaml();
-		Reader reader = null;
-		try {
-			reader = new FileReader("conf/" + nameFile);
-			return (List) yaml.load(reader);
-		} catch (final FileNotFoundException fnfe) {
-			System.err.println("We had a problem reading the YAML from the file because we couldn't find the file."
-					+ fnfe);
-		}
-		finally {
-			if (null != reader) {
-				try {
-					reader.close();
-				} catch (final IOException ioe) {
-					System.err.println("We got the following exception trying to clean up the reader: " + ioe);
-				}
-			}
-		}
-		return null;
-
 	}
 
 }
