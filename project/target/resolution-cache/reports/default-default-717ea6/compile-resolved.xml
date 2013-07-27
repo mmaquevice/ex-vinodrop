@@ -9,8 +9,20 @@
 		extra-scalaVersion="2.9.2"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130528231202"/>
+		date="20130727175019"/>
 	<dependencies>
+		<module organisation="com.github.play2war" name="play2-war-plugin">
+			<revision name="1.0" status="release" pubdate="20130624134118" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" homepage="https://github.com/dlecan/play2-war-plugin" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="58">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2130" time="0" location="C:\IT\play-2.1.0\framework\.\..\repository\cache\scala_2.9.2\sbt_0.12\com.github.play2war\play2-war-plugin\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.github.play2war/play2-war-plugin/scala_2.9.2/sbt_0.12/1.0/ivys/ivy.xml"/>
+				<caller organisation="default" name="default-717ea6" conf="compile" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.1-SNAPSHOT" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2"/>
+				<artifacts>
+					<artifact name="play2-war-plugin" type="jar" ext="jar" status="no" details="" size="73604" time="0" location="C:\IT\play-2.1.0\framework\.\..\repository\cache\scala_2.9.2\sbt_0.12\com.github.play2war\play2-war-plugin\jars\play2-war-plugin-1.0.jar">
+						<origin-location is-local="false" location="http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.github.play2war/play2-war-plugin/scala_2.9.2/sbt_0.12/1.0/jars/play2-war-plugin.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="play" name="sbt-plugin">
 			<revision name="2.1.0" status="release" pubdate="20130205111248" resolver="typesafe-ivy-releases" artresolver="typesafe-ivy-releases" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="0">
 				<metadata-artifact status="no" details="" size="4729" time="0" location="C:\IT\play-2.1.0\framework\.\..\repository\cache\scala_2.9.2\sbt_0.12\play\sbt-plugin\ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/ivy-releases/play/sbt-plugin/scala_2.9.2/sbt_0.12/2.1.0/ivys/ivy.xml"/>

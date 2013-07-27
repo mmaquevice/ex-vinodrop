@@ -2,3 +2,4 @@ run
 eclipse with-source=true
 play debug run
 run
+exit

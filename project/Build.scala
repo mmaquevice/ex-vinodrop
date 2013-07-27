@@ -1,6 +1,7 @@
 import sbt._
 import Keys._
 import play.Project._
+import com.github.play2war.plugin._
 
 object ApplicationBuild extends Build {
 
@@ -15,8 +16,10 @@ object ApplicationBuild extends Build {
     "postgresql" % "postgresql" % "8.4-702.jdbc4"
   )
 
-  val main = play.Project(appName, appVersion, appDependencies).settings(
-     ebeanEnabled := true        
+  val main = play.Project(appName, appVersion, appDependencies).settings(Play2WarPlugin.play2WarSettings: _*)
+  .settings(
+     ebeanEnabled := true,        
+     Play2WarKeys.servletVersion := "3.0"   
   )
 
 }
