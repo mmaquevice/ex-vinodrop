@@ -1,0 +1,27 @@
+[info] ApplicationTest
+[info] + ApplicationTest.simpleCheck
+[info] + ApplicationTest.renderTemplate
+[info] 
+[info] 
+[info] Total for test ApplicationTest
+[info] Finished in 0.019 seconds
+[info] 2 tests, 0 failures, 0 errors
+[info] models.ModelsTest
+[info] + models.ModelsTest.createAndRetrieveUser
+[info] + models.ModelsTest.tryAuthenticateUser
+[info] + models.ModelsTest.findProjectsInvolving
+[info] + models.ModelsTest.findTodoTasksInvolving
+[info] + models.ModelsTest.fullTest
+[info] 
+[info] 
+[info] Total for test models.ModelsTest
+[info] Finished in 0.003 seconds
+[info] 5 tests, 0 failures, 0 errors
+[info] controllers.LoginTest
+[info] + controllers.LoginTest.authenticateFailure
+[info] + controllers.LoginTest.authenticateSuccess
+[info] 
+[info] 
+[info] Total for test controllers.LoginTest
+[info] Finished in 0.002 seconds
+[info] 2 tests, 0 failures, 0 errors
