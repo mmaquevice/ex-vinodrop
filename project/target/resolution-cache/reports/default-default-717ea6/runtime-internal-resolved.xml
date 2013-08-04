@@ -9,7 +9,7 @@
 		extra-scalaVersion="2.9.2"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130727175019"/>
+		date="20130804145130"/>
 	<dependencies>
 		<module organisation="com.github.play2war" name="play2-war-plugin">
 			<revision name="1.0" status="release" pubdate="20130624134118" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" homepage="https://github.com/dlecan/play2-war-plugin" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="58">

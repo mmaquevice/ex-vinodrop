@@ -1,13 +1,13 @@
-2013-07-27 15:43:07,963 - [INFO] - from play in main 
+2013-08-04 14:51:48,315 - [INFO] - from play in main 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2013-07-27 15:43:35,988 - [INFO] - from play in New I/O  worker #1 
+2013-08-04 14:52:09,274 - [INFO] - from play in New I/O  worker #1 
 database [default] connected at jdbc:h2:mem:play
 
-2013-07-27 15:43:37,011 - [ERROR] - from application in New I/O  worker #1 
+2013-08-04 14:52:10,241 - [ERROR] - from application in New I/O  worker #1 
 
 
-! @6f4lh7jgf - Internal server error, for (GET) [/] ->
+! @6f71f2cf9 - Internal server error, for (GET) [/] ->
 
 play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
 	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:457) ~[play-jdbc_2.10.jar:2.1.0]
@@ -64,9 +64,9 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0]
 	at java.lang.Thread.run(Unknown Source) [na:1.7.0]
 
-2013-07-27 15:43:40,414 - [INFO] - from play in New I/O  worker #1 
+2013-08-04 14:53:33,557 - [INFO] - from play in New I/O  worker #1 
 database [default] connected at jdbc:h2:mem:play
 
-2013-07-27 15:43:40,869 - [INFO] - from play in New I/O  worker #1 
+2013-08-04 14:53:33,896 - [INFO] - from play in New I/O  worker #1 
 Application started (Dev)
 

@@ -12898,7 +12898,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#cache;0.12.2!cache.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.12.2!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar
-[debug] :: resolution report :: resolve 4462ms :: artifacts dl 114ms
+[debug] :: resolution report :: resolve 7092ms :: artifacts dl 112ms
 [debug] Nbr of module to sort : 62
 [debug] Sort dependencies of : play#sbt-plugin;2.1.0 / Number of dependencies = 18
 [debug] Sort dependencies of : play#sbt-link;2.1.0 / Number of dependencies = 1
@@ -15109,5 +15109,5 @@
 [debug] 	report for default#default-717ea6;0.1-SNAPSHOT docs produced in C:\Users\Mateo\Desktop\Dropbox\Dropbox\IT\MyProjects\vinodrop\project\target\resolution-cache\reports\default-default-717ea6\docs-resolved.xml
 [debug] Nbr of module to sort : 0
 [debug] 	report for default#default-717ea6;0.1-SNAPSHOT pom produced in C:\Users\Mateo\Desktop\Dropbox\Dropbox\IT\MyProjects\vinodrop\project\target\resolution-cache\reports\default-default-717ea6\pom-resolved.xml
-[debug] 	resolve done (4462ms resolve - 114ms download)
+[debug] 	resolve done (7092ms resolve - 112ms download)
 [info] Done updating.
